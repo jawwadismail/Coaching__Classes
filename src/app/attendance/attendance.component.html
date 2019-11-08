@@ -1,0 +1,43 @@
+<html>
+<head>
+    <style>
+        #customers {
+          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        #customers td, #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+        #customers tr:hover {background-color: #ddd;}
+
+        #customers th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #4CAF50;
+          color: white;
+        }
+        </style>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <title>Document</title>
+</head>
+<body>
+  <h2>The List Of students having attendance less than 75% is:</h2>
+  <button mat-raised-button color = "primary"  (click)="getData()">Students</button>
+  <!-- <ul>
+    <li *ngFor="let item of abcd">
+      {{item}}
+    </li>
+  </ul> -->
+  <table id="customers">
+    <tr *ngFor="let item of abcd"><td>{{item}}</td></tr>
+  </table>
+</body>
+</html>

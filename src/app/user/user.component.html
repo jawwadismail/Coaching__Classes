@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #customers {
+          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        #customers td, #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+        #customers tr:hover {background-color: #ddd;}
+
+        #customers th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #4CAF50;
+          color: white;
+        }
+        </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h2>List of All the students Studying in Coaching classes</h2>
+    <button mat-raised-button (click)="getData()" color="primary">Students</button>
+
+    <br><br>
+    <table id="customers">
+      <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>EMAIL</th>
+        <th>PHONE</th>
+      </tr>
+      <tr *ngFor="let item of abcd">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.phone}}</td>
+      </tr>
+    </table>
+
+</body>
+</html>
