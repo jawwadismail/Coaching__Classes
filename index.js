@@ -147,15 +147,15 @@ readXlsxFile('abc.xlsx').then((rows) => {
         const transport = {
           service: "Gmail",
           auth: {
-            user: "jawwadismail7@gmail.com",
-            pass: "@Jawwad128"
+            user: "",
+            pass: ""
           }
         }
 
         const smtpTransport = nodemailer.createTransport(transport)
 
         const options = {
-          from: "JAWWAD Ismail <jawwadismail7@gmail.com>",
+          from: "JAWWAD Ismail <>",
           to: dat,
           subject: "Attendance",
           html: "<h1>You have less than 75% attendance in Software Engineering</h1>"
@@ -191,15 +191,15 @@ readXlsxFile('abc.xlsx').then((rows) => {
         const transport = {
           service: "Gmail",
           auth: {
-            user: "jawwadismail7@gmail.com",
-            pass: "@Jawwad128"
+            user: "",
+            pass: ""
           }
         }
 
         const smtpTransport = nodemailer.createTransport(transport)
 
         const options = {
-          from: "JAWWAD Ismail <jawwadismail7@gmail.com>",
+          from: "JAWWAD Ismail <>",
           to: dat,
           subject: "Attendance",
           html: "<h1>You have less than 75% attendance in TCS</h1>"
