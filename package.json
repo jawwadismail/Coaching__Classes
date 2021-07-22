@@ -39,7 +39,7 @@
     "read-excel-file": "^4.0.3",
     "rxjs": "6.5.3",
     "rxjs-compat": "6.5.3",
-    "xlsx": "^0.15.1",
+    "xlsx": "^0.17.0",
     "zone.js": "^0.10.2"
   },
   "devDependencies": {
